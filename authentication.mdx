@@ -1,0 +1,35 @@
+---
+title: "Authentication"
+---
+
+The LeadMagic API uses API keys to authenticate requests. You can find your API key in your account profile on the LeadMagic platform. This key must be included in the header of each request to the API.
+
+## Obtaining your API key
+
+1. [Log in](https://accounts.leadmagic.io/sign-in) to your LeadMagic account.
+2. Navigate to your Account Profile.
+3. Locate the API Key section and copy your API key.
+
+## Using your API key
+
+Include your API key in each API request by adding it to the request's header. The API key should be included as the value for the X-API-Key header field.
+
+Example using curl:
+
+```bash
+curl -X GET 'https://api.leadmagic.io/email-validate' \
+-H 'Content-Type: application/json' \
+-H 'X-API-Key: YourApiKeyHere'
+```
+
+# Summary
+
+Your API key is essential for accessing the LeadMagic API. By securely including it in your API requests, you authenticate your identity and gain access to the wide range of features offered by our Data Enrichment Products. Remember to manage your API key responsibly to maintain the security of your data and access.
+
+## Best practices for API key security
+
+1. **Keep it secret:** Your API key is akin to a password. Do not share it publicly or expose it in places where unauthorized users might access it, such as public repositories or forums.
+
+2. **Regenerate if necessary:** If you suspect your API key has been compromised, regenerate it immediately from your Account Profile to prevent unauthorized access.
+
+This document includes the detailed process for obtaining and using your API key, along with best practices for maintaining its security. It's tailored to ensure both new and experienced users of the LeadMagic API can easily authenticate their requests while understanding the importance of key management.

@@ -1,0 +1,31 @@
+---
+title: "Making API calls"
+---
+
+Welcome to the LeadMagic API! This guide is designed for developers looking to integrate LeadMagic's Data Enrichment Products into their applications. Whether you're new to APIs or an experienced developer, our goal is to make it straightforward for you to use our services.
+
+## Quick start
+
+### 1. Obtain your API Key
+
+First, [log in to your LeadMagic account](https://accounts.leadmagic.io/sign-in) and navigate to your Account Profile to find your API key.
+
+### 2. Make your first API call
+
+Use any HTTP client of your choice to make an API call. Here's an example using `curl`:
+
+```bash
+curl -X GET 'https://api.leadmagic.io/email-validate' \
+-H 'Content-Type: application/json' \
+-H 'X-API-Key: YourApiKeyHere' \
+-d '{"email": "support@leadmagic.io"}'
+```
+
+### 3. Check the response
+
+A successful request will return a JSON response with the data you requested. The structure of the response will depend on the endpoint you're accessing.
+
+<Note>
+  Remember, your API key is like a password. Keep it secure and never expose it
+  in public repositories or forums.
+</Note>
